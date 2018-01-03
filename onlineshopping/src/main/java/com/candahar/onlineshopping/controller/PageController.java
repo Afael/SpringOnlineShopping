@@ -10,6 +10,7 @@ public class PageController {
 	public ModelAndView index(){
 		ModelAndView mv = new ModelAndView("index");//name of jsp file
 		mv.addObject("greeting", "Welcome to spring web mvc");
+		mv.addObject("userClickHome", true);		
 		return mv;
 	}
 	
